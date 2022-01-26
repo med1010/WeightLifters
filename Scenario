@@ -39,7 +39,13 @@ Then      User is able to see the daily exercises to be done
 Scenario: User Profile
 Given     User is logged in 
 When      User clicks on Profile 
-Then      User is able to see his deatils
+Then      User is able to see his details
+
+Scenario: Daily Workout Routine
+Given     User is on Daily Workout Routine Page
+When      User selects the date
+Then      List of excercise displays 
+And       User is able to add the daily data corresponding to each excercise
 
 Scenario: Track number of bench pressed done
 Given     I did 15 bench press sets of 10 reps, 70 kg
