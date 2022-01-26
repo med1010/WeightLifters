@@ -1,5 +1,11 @@
+
 write scenario
 
+Scenario: User Login
+Given     User is on login page
+When      User enters username and password
+And       User hits enter 
+Then      User is logged in
 
 Scenario: Track number of bench pressed done
     Given I did 10 bench presses of 70 kg
