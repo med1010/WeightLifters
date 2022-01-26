@@ -36,6 +36,11 @@ Given     User is logged in
 When      User is on HomePage
 Then      User is able to see the daily exercises to be done
 
+Scenario: User Profile
+Given     User is logged in 
+When      User click on Profile 
+Then      User is able to see his deatils
+
 Scenario: Track number of bench pressed done
 Given     I did 10 bench presses of 70 kg
 When      I try to update my logs for the day
