@@ -38,7 +38,7 @@ Then      User is able to see the daily exercises to be done
 
 Scenario: User Profile
 Given     User is logged in 
-When      User click on Profile 
+When      User clicks on Profile 
 Then      User is able to see his deatils
 
 Scenario: Track number of bench pressed done
