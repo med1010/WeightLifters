@@ -1,1 +1,5 @@
-write scenario 
+Scenario: User Login
+Given     User is on login page
+When      User enters username and password
+And       User hits enter 
+Then      User is logged in
