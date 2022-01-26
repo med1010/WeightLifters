@@ -42,7 +42,8 @@ When      User click on Profile
 Then      User is able to see his deatils
 
 Scenario: Track number of bench pressed done
-Given     I did 10 bench presses of 70 kg
+Given     I did 15 bench press sets of 10 reps, 70 kg
 When      I try to update my logs for the day
-Then      The number of benches of 70 kg increments by 10
+Then      The number of benches completes of 70 kg increments by 150, the number
+	  of calories burned increases by 90
 
