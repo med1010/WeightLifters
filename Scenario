@@ -19,6 +19,18 @@ When      User enters a valid username and invalid password
 And       User hits enter 
 Then      Message Displayed as Invalid Login
 
+Scenario: Blank username
+Given     User is on login page
+When      User enters an invalid username and valid password
+And       User hits enter 
+Then      Message Displayed as Username required
+
+Scenario: Blank password
+Given     User is on login page
+When      User enters a valid username and invalid password
+And       User hits enter 
+Then      Message Displayed as Password required
+
 Scenario: Track number of bench pressed done
     Given I did 10 bench presses of 70 kg
      When I try to update my logs for the day
