@@ -59,4 +59,9 @@ Given     I weigh <kg>, I did <x> reps of bench presses at <x1> kgs,
 When      I try to calculate the calories burned for the day
 Then      The program returns eg. kg * ((0.00183 * x * x1/kg) + (0.0016 * y)) 
 	  calories burned in that day.
+	  
+	  Scenario: display  daily workout  data
+Given     user  finished  inputting data 
+When      User  click  buttom  updated today's  workout 
+Then      User is able to see  the record  page update 
 
