@@ -32,7 +32,7 @@ And       User hits enter
 Then      Message Displayed as Password required
 
 Scenario: Track number of bench pressed done
-    Given I did 10 bench presses of 70 kg
-     When I try to update my logs for the day
-     Then The number of benches of 70 kg increments by 10
+Given     I did 10 bench presses of 70 kg
+When      I try to update my logs for the day
+Then      The number of benches of 70 kg increments by 10
 
